@@ -24,9 +24,9 @@ class Test2(system: ActorSystem) extends Actor{
 	override def receive: Receive = {
 		case Message2(message) => {
 			println("Hello from Test2!")
-//			if (math.random < 0.25) {
+			if (math.random < 0.25) {
 				sender() ! s"Got your message ;), it's: $message"
-//			throw new AbsolutelyFatalException()
+			}else throw new AbsolutelyFatalException()
 		}
 	}
 }
@@ -76,8 +76,7 @@ class Supervisor(system: ActorSystem) extends Actor {
 	override def receive: Receive = {
 		case Ping(message) =>
 				println("Hello from Supervisor!")
-//			sender() ! router.tell(Test1.Message1(message), sender())
-				sender() ! s"Got your message ;), it's: $message"
+				sender() ! router.tell(Test1.Message1(message), sender())
 	}
 }
 
