@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/akka-sample-fsm-scala.iml" filepath="$PROJECT_DIR$/.idea/modules/akka-sample-fsm-scala.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/akka-sample-fsm-scala-build.iml" filepath="$PROJECT_DIR$/.idea/modules/akka-sample-fsm-scala-build.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/akka-sample.iml" filepath="$PROJECT_DIR$/.idea/modules/akka-sample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/akka-sample-build.iml" filepath="$PROJECT_DIR$/.idea/modules/akka-sample-build.iml" />
     </modules>
   </component>
 </project>
